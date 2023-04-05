@@ -2,18 +2,20 @@
     box-sizing: border-box;
 }
 
+
 ul{
     margin: 0;
     padding: 0;
 }
 
-ul li{
+
+ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #e9f0c4
+    background: #e9f0c4;
     font-size: 18px;
-    transition: 0.2s;
+    transition: .2s;
 /* Makes LI unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -21,13 +23,21 @@ ul li{
     user-select: none;
 }
 
+
 /* Add odd/even colors to the list */
+
+
+ul li:nth-child(odd){
+    background: #ea863f
+}
+
 
 ul li:hover {
     background: #28219f;
 }
 
-ul li.checked: :before {
+
+ul li.checked::before {
     content:'';
     position: absolute;
     border-color: #fff;
@@ -47,6 +57,7 @@ ul li.checked: :before {
     padding: 12px 16px 12px 16px;
 }
 
+
 .close:hover {
     background-color: #f44336;
     color: white;
@@ -59,7 +70,9 @@ ul li.checked: :before {
     text-align: center;
 }
 
+
 /* Style Input Button */
+
 
 input{
     margin: 0;
@@ -70,13 +83,15 @@ input{
     float: left;
     font-size: 16px;
 
+
 }
+
 
 .addBtn {
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
-    color:#555;
+    color: #555;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -85,11 +100,13 @@ input{
     border-radius: 6px;
 }
 
-.header:after{
+
+.header:after {
     content: "";
     display: table;
-    clear:both;
+    clear: both;
 }
+
 
 .addBtn:hover {
     background-color: #555555;
